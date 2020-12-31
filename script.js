@@ -38,6 +38,7 @@ function generatePassword(charLength) {
     //   charLength = parseInt(prompt("Please enter a value between 8 and 128."));
     // }
     while (charLength < 8 || charLength > 128 || isNaN(charLength)) {
+      alert("Please choose a number between 8 and 128.");
       return generatePassword();
     }
   }
